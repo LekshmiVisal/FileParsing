@@ -1,0 +1,15 @@
+
+<configuration>
+  <!-- Appenders -->
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <file>/Users/lekshmi/Documents/MyLogs/mylog.log</file>  <!-- Specify the path to the log file -->
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- Loggers -->
+  <root level="INFO">  <!-- Set the desired log level -->
+    <appender-ref ref="FILE" />
+  </root>
+</configuration>
