@@ -32,10 +32,5 @@ public class Task {
 			this.priority = priority;
 		}
 
-	    // Getters and setters
-	    // ...
-
-	    // Constructors
-	    // ...
 
 }
