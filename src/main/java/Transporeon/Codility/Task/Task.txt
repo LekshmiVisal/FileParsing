@@ -1,0 +1,35 @@
+You are working on a system that helps to manage tasks on a to-do list. 
+Your job is to implement an endpoint that allows these tasks to be updated.
+ In order to achieve this, you should use the 
+ Hibernate and Spring frameworks. 
+ Spring Boot Application Version 2.0.5 
+ Spring Boot Starter Data JPA and 
+ Spring Boot Starter Web Modules 
+ Included Database access
+  is fully configured The application is compiled using JDK 8
+   Hibernate Version 5.2.17.Final 
+   Database The tasks are stored in a relational database. 
+   The DB schema looks like this.
+    CREATE TABLE{
+     TASK id bigint not null,
+     description varchar 200 not null,
+     priority bigint,
+     primarykey id 
+     }
+     SENDING A REQUEST PUT task ID with request body
+      DESCRIPTION DESCRIPTION TASK DESCRIPTION PRIORITY SHOULD UPDATE DESCRIPTION AND PRIORITY OF TASK WITH ID EQUAL TO ID Changes should be stored in the database. 
+      Your task Configure the task class as a Hibernate entity. 
+      Implement an endpoint as described above. 
+      Furthermore, it should meet the following requirements.
+       Endpoint should return error code 404 if a task with given ID does not exist.
+In response, the server should return the following JSON MESSAGE :
+        cannot find task with given ID status 404 
+        Endpoint should return error code 400 if the task description is null or key description is not present in the request JSON.
+
+In response, the server should return the following JSON MESSAGE task description is required status 400 Endpoint should return error code 200 when the task is successfully updated. The response body should be the same as the request body,
+
+for example, task description priority 5 REMARK You can place more than one class clarification in the editor. 
+          
+          Please remember not to use public classes at first when you run tests in the initial code. 
+          The Spring application will fail and start up.
+ It will start successfully once you do the complete sum of the requirements.--
