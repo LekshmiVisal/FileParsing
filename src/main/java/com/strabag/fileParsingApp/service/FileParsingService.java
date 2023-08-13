@@ -102,12 +102,6 @@ public class FileParsingService {
   		}
          
       }
-	/*
-    private long generateJobId() {
-        return UUID.randomUUID();
-    }
-    
-        */ 
     public Optional<JobStatus> getJobStatus(Long jobId) {
         return jobStatusRepository.findById(jobId);
     }

@@ -72,6 +72,5 @@ public class Register_jobTest {
         //MultipartFile uploadedFile = fileCaptor.getValue();
         
         logger.info("in Register_jobTest uploadedFile completed "  );
-        // Additional assertions on the uploaded file if needed
     }
 }
