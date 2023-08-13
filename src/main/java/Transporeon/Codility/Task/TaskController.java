@@ -31,6 +31,7 @@ class TaskController {
     @PutMapping("/{id}")
     public ResponseEntity<?> updateTask(@PathVariable Long id, @RequestBody Task updatedTask) {
         if (!taskRepository.existsById(id)) {
+        	System.out.println("Inside taskRepository existsById- not found");
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
                     .body("{\"MESSAGE\": \"Cannot find task with given ID\", \"status\": 404}");
         }
