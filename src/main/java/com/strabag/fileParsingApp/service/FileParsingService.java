@@ -89,7 +89,7 @@ public class FileParsingService {
         
     	  List<FileDetails> savedFileDetails = fileDetailsRepository.saveAll(fileDetailsArray);
     	  
-    	  logger.info("fileDetails saved");
+    	  logger.info("fileDetails saved to DB");
     	  return jobId;
          // String jobId = generateJobId();
           // You can perform additional actions with the saved sections or jobId

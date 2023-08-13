@@ -21,7 +21,7 @@ public class ImportService {
 
     @PostConstruct
     public void init() {
-    	System.out.println("importFolder in ImportService: " + importFolder);
+    	System.out.println("importFolder in ImportService is: " + importFolder);
     }
     
     public void setImportFolder(String importFolder) {
